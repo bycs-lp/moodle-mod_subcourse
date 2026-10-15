@@ -17,7 +17,8 @@ The git branches here support the following versions.
 | Moodle version        | Branch            |
 |-----------------------|-------------------|
 | Moodle 4.5-5.0        | MOODLE_405_STABLE |
-| Moodle 5.1            | MOODLE_501_STABLE |
+| Moodle 5.1-5.2        | MOODLE_501_STABLE |
+| Moodle 5.3            | MOODLE_503_STABLE |
 
 Installation
 ------------
