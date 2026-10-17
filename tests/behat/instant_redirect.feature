@@ -27,7 +27,7 @@ Feature: Clicking the subcourse instance in the course outline may or may not re
   Scenario: Student has to click the link to the referenced course manually
     And I add a "subcourse" activity to course "MainCourse" section "1" and I fill the form with:
       | Subcourse name                    | Unit course 1       |
-      | Fetch grades from                 | RefCourse (R)       |
+      | Fetch grades from                 | RefCourse           |
       | Redirect to the referenced course | 0                   |
     And I log out
     When I log in as "student1"
@@ -41,7 +41,7 @@ Feature: Clicking the subcourse instance in the course outline may or may not re
   Scenario: Student is instantly redirected to the referenced course
     And I add a "subcourse" activity to course "MainCourse" section "1" and I fill the form with:
       | Subcourse name                    | Unit course 1       |
-      | Fetch grades from                 | RefCourse (R)       |
+      | Fetch grades from                 | RefCourse           |
       | Redirect to the referenced course | 1                   |
     And I log out
     When I log in as "student1"
@@ -53,7 +53,7 @@ Feature: Clicking the subcourse instance in the course outline may or may not re
   Scenario: Teacher is not redirected instantly even if that is enabled
     And I add a "subcourse" activity to course "MainCourse" section "1" and I fill the form with:
       | Subcourse name                    | Unit course 1       |
-      | Fetch grades from                 | RefCourse (R)       |
+      | Fetch grades from                 | RefCourse           |
       | Redirect to the referenced course | 1                   |
     And I am on the "Unit course 1" "subcourse activity" page logged in as teacher1
     Then I should see "Go to RefCourse"
@@ -64,7 +64,7 @@ Feature: Clicking the subcourse instance in the course outline may or may not re
   Scenario: Teacher is redirected instantly if unable to fetch grades manually
     And I add a "subcourse" activity to course "MainCourse" section "1" and I fill the form with:
       | Subcourse name                    | Unit course 1       |
-      | Fetch grades from                 | RefCourse (R)       |
+      | Fetch grades from                 | RefCourse           |
       | Redirect to the referenced course | 1                   |
       | ID number                         | subcourse1          |
     And the following "permission overrides" exist:

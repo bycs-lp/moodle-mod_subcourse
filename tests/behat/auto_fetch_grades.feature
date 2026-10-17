@@ -52,7 +52,7 @@ Feature: Grades are fetched automatically from the referenced course
     #
     And I add a "subcourse" activity to course "MainCourse" section "1" and I fill the form with:
       | Subcourse name                    | Unit course 1       |
-      | Fetch grades from                 | RefCourse (R)       |
+      | Fetch grades from                 | RefCourse           |
       | Redirect to the referenced course | 0                   |
     And I turn editing mode off
     And I am on the "Unit course 1" "subcourse activity" page logged in as teacher1
