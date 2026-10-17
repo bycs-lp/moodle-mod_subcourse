@@ -47,7 +47,7 @@ Feature: Progress and grade in referenced course can be displayed on the course 
   Scenario: Progress and grade displayed on both course main page and subcourse view page.
     Given I add a "subcourse" activity to course "MainCourse" section "1" and I fill the form with:
       | Subcourse name                                          | Unit course 1       |
-      | Fetch grades from                                       | RefCourse (R)       |
+      | Fetch grades from                                       | RefCourse           |
       | Redirect to the referenced course                       | 0                   |
       | Display progress from referenced course on course page  | 1                   |
       | Display grade from referenced course on course page     | 1                   |
@@ -68,7 +68,7 @@ Feature: Progress and grade in referenced course can be displayed on the course 
   Scenario: Progress and grade displayed on subcourse view page only.
     Given I add a "subcourse" activity to course "MainCourse" section "1" and I fill the form with:
       | Subcourse name                                          | Unit course 1       |
-      | Fetch grades from                                       | RefCourse (R)       |
+      | Fetch grades from                                       | RefCourse           |
       | Redirect to the referenced course                       | 0                   |
       | Display progress from referenced course on course page  | 0                   |
       | Display grade from referenced course on course page     | 0                   |

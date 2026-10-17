@@ -46,7 +46,7 @@ Feature: Course final grades hidden in the referenced course are hidden in the t
   Scenario: If the course final grade is hidden, the associated subcourse activity grade is marked as hidden, too.
     Given I add a "subcourse" activity to course "MainCourse" section "1" and I fill the form with:
       | Subcourse name                    | Unit course 1       |
-      | Fetch grades from                 | RefCourse (R)       |
+      | Fetch grades from                 | RefCourse           |
       | Redirect to the referenced course | 0                   |
     And I turn editing mode off
     And I am on "MainCourse" course homepage
@@ -87,7 +87,7 @@ Feature: Course final grades hidden in the referenced course are hidden in the t
       | Hidden          | 1 |
     And I add a "subcourse" activity to course "MainCourse" section "1" and I fill the form with:
       | Subcourse name                    | Unit course 1       |
-      | Fetch grades from                 | RefCourse (R)       |
+      | Fetch grades from                 | RefCourse           |
       | Redirect to the referenced course | 0                   |
     And I turn editing mode off
     And I am on "MainCourse" course homepage

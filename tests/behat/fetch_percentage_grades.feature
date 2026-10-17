@@ -108,7 +108,7 @@ Feature: Grades can be fetched either a real values or as percentages
   Scenario: Grades are fetched as real values by default
     Given I add a "subcourse" activity to course "MainCourse" section "1" and I fill the form with:
       | Subcourse name                    | Unit course 1       |
-      | Fetch grades from                 | RefCourse (R)       |
+      | Fetch grades from                 | RefCourse           |
       | Redirect to the referenced course | 0                   |
     And I turn editing mode off
     And I am on "MainCourse" course homepage
@@ -136,7 +136,7 @@ Feature: Grades can be fetched either a real values or as percentages
   Scenario: Grades can be fetched as percentual values
     Given I add a "subcourse" activity to course "MainCourse" section "1" and I fill the form with:
       | Subcourse name                    | Unit course 1       |
-      | Fetch grades from                 | RefCourse (R)       |
+      | Fetch grades from                 | RefCourse           |
       | Redirect to the referenced course | 0                   |
       | Fetch grades as                   | Percentual values   |
     And I turn editing mode off

@@ -23,7 +23,7 @@ Feature: Testing overview integration in subcourse activity
     And I turn editing mode on
     And I add a "subcourse" activity to course "Course 1" section "1" and I fill the form with:
       | Subcourse name                    | Unit course 1 |
-      | Fetch grades from                 | RefCourse (R) |
+      | Fetch grades from                 | RefCourse     |
       | Redirect to the referenced course | 0             |
 
   @javascript

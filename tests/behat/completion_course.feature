@@ -24,7 +24,7 @@ Feature: Completing the referenced course can lead to completing the subcourse a
     When I am on the "MainCourse" course page logged in as "teacher1"
     And I add a "subcourse" activity to course "MainCourse" section "1" and I fill the form with:
       | Subcourse name                    | Unit course 1                                     |
-      | Fetch grades from                 | RefCourse (R)                                     |
+      | Fetch grades from                 | RefCourse                                         |
       | Redirect to the referenced course | 0                                                 |
       | Add requirements                  | 1                                                 |
       | View the activity                 | 0                                                 |
